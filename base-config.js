@@ -1,0 +1,52 @@
+/* eslint-disable-next-line no-undef */
+module.exports = {
+	plugins:
+	[
+		'@babel',
+	],
+	parser: '@babel/eslint-parser',
+	extends: 'eslint:recommended',
+	rules:
+	{
+		curly: 'error',
+		'brace-style': ['error', 'allman', { allowSingleLine: true }],
+		'comma-dangle': ['error', 'always-multiline'],
+		indent: ['error', 'tab'],
+		'linebreak-style': ['error', 'unix'],
+		'max-len': ['error', { code: 120 }],
+		'no-console': 'error',
+		'no-duplicate-imports': 'error',
+		'no-empty': ['error', { allowEmptyCatch: true }],
+		'no-extra-parens': 'error',
+		'no-loss-of-precision': 'error',
+		'no-multiple-empty-lines': ['error', { max: 1 }],
+		"no-promise-executor-return": "error",
+		'no-template-curly-in-string': 'error',
+		'no-trailing-spaces': 'error',
+		'no-unexpected-multiline': 'off',
+		'no-useless-backreference': 'error',
+		'no-useless-call': 'error',
+		'no-useless-concat': 'error',
+		'no-useless-return': 'error',
+		'no-var': 'error',
+		'prefer-const': 'error',
+		'prefer-rest-params': 'error',
+		'prefer-spread': 'error',
+		'quote-props': ['error', 'as-needed'],
+		'require-atomic-updates': 'error',
+		'space-before-function-paren': ['error', 'never'],
+		'spaced-comment': 'error',
+
+		// @babel/eslint-plugin rule overwrittes:
+		"@babel/new-cap": 'error',
+		"@babel/no-invalid-this": 'error',
+		"@babel/no-unused-expressions": 'error',
+		"@babel/object-curly-spacing": ['error', 'always'],
+		"@babel/semi": ['error', 'always'],
+		'new-cap': false,
+		'no-invalid-this': false,
+		'no-unused-expressions': false,
+		'object-curly-spacing': false,
+		semi: false,
+	},
+};
